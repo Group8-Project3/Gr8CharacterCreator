@@ -24,6 +24,7 @@
   "homepage": "https://github.com/Group8-Project3/Project-3#readme",
   "dependencies": {
     "concurrently": "^6.0.0",
+    "express": "^4.17.1",
     "passport-google-oauth": "^2.0.0"
   }
 }
