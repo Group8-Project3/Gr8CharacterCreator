@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
+const characterRouter = require("./routes/character-router");
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -18,6 +19,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Project3", {
   useFindAndModify: false
 });
 // Define API routes here
+app.use("/api", characterRouter);
 // Send every other request to the React app
 // Define any API routes before this runs
 app.get("*", (req, res) => {
