@@ -1,11 +1,23 @@
-import React from 'react'
+import React from "react";
+import "../../App.css";
 
 function Navbar() {
   return (
     <div>
-      <h1>DND THINGS!!!!!</h1>
+       <nav>
+        <div className="nav-wrapper">
+          <h1 className="brand-logo">
+            Group Gr8 Character Creator
+          </h1>
+          <ul id="nav-mobile" className="right hide-on-med-and-down">
+            <li>
+              <a href="/">Created Characters</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
