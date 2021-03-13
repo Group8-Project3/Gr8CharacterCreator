@@ -2,48 +2,125 @@ import React from 'react'
 
 function Skills() {
   return (
-    <div>
-      <div className="charClass">
-        <h2>Ability Scores</h2>
-        <ul>
-          <li>Strength
-            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-            <i class="material-icons right">casino</i>
-            </button>
-          </li>
-          <p>12</p>
-          <li>Dexterity
-          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-            <i class="material-icons right">casino</i>
-            </button>
-          </li>
-          <p>12</p>
-          <li>Constition
-          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-            <i class="material-icons right">casino</i>
-            </button>
-          </li>
-          <p>12</p>
-          <li>Intelligence
-          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-            <i class="material-icons right">casino</i>
-            </button>
-          </li>
-          <p>12</p>
-          <li>Wisdom
-          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-            <i class="material-icons right">casino</i>
-            </button>
-          </li>
-          <p>12</p>
-          <li>Charisma
-          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-            <i class="material-icons right">casino</i>
-            </button>
-          </li>
-          <p>12</p>
-        </ul>
-      </div>
+    <div className="charClass">
+      <h2>Skills</h2>
+      <h4>Choose 2</h4>
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>Acrobatics</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>Animal Handling</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>Arcana</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>Athletics</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>Deception</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>History</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>Insight</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>Intimidation</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>Investigation</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>Medicine</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>Nature</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>Perception</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>Performance</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>Persuasion</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>Religion</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>Sleight of Hand</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>History</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>Stealth</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>Survival</span>
+          </label>
+        </p>
+      </form>
     </div>
   )
 }

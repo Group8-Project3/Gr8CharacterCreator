@@ -1,7 +1,8 @@
 import Navbar from "./components/Navbar/Navbar";
 import Class from "./components/Class/Class";
 import Race from "./components/Race/Race"
-import Skills from "./components/Skills/Skills"
+import AbilityScores from "./components/AbilityScores/AbilityScores";
+import Skills from "./components/Skills/Skills";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Class />
       <Race />
+      <AbilityScores />
       <Skills />
     </>
   );
