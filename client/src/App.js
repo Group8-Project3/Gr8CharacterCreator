@@ -1,18 +1,44 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
-import Class from "./components/Class/Class";
-import Race from "./components/Race/Race"
 import AbilityScores from "./components/AbilityScores/AbilityScores";
-import Skills from "./components/Skills/Skills";
+import AttributeList from "./components/AttributeList/AttributeList";
 
+const classes = ["Cleric", "Fighter", "Paladin", "Ranger", "Rogue", "Sorcerer"];
+const skills = [
+  "Acrobatics",
+  "Animal",
+  "Arcana",
+  "Athletics",
+  "Deception",
+  "History",
+  "Insight",
+  "Intimidation",
+  "Investigation",
+  "Medicine",
+  "Nature",
+  "Perception",
+  "Performance",
+  "Persuasion",
+  "Religion",
+  "Sleight",
+  "History",
+  "Stealth",
+  "Survival",
+];
+const race = [
+  "Human",
+  "Elf",
+  "Dwarf",
+  "Half",
+  "Gnome"]
 function App() {
   return (
     <>
       <Navbar />
-      <Class />
-      <Race />
+      <AttributeList attributes={ classes } title="Classes" />
+      <AttributeList attributes={ race } title="Race"/>
       <AbilityScores />
-      <Skills />
+      <AttributeList attributes={ skills } title="Skills"/>
     </>
   );
 }
