@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "./Navbar";
-import AbilityScores from "./AbilityScores";
-import AttributeList from "./AttributeList";
-import CharacterBlock from "./CharacterBlock";
+import AbilityScores from "./components/AbilityScores";
+import AttributeList from "./components/AttributeList";
+import CharacterBlock from "./components/CharacterBlock";
 
 function CharacterCreator() {
   const classes = [
