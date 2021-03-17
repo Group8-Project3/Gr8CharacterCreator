@@ -15,3 +15,13 @@ body {
 .nav-wrapper h1 {
   margin-top: 10px;
 }
+
+.charBlock {
+  background-color: white;
+  width: 400px;
+  border-radius: 6px;
+  opacity: 0.8;
+  position: fixed;
+  top: 70px;
+  margin-left: 20px;
+}
