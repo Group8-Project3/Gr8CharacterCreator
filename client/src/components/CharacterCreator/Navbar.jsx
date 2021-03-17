@@ -11,10 +11,10 @@ function Navbar() {
           </h1>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li>
-              <a href="../../public/">Created Characters</a>
+              <a href="/created">Created Characters</a>
             </li>
             <li>
-              <a href="../../../public/login.html">Log out</a>
+              <a href="/">Log out</a>
             </li>
           </ul>
         </div>
