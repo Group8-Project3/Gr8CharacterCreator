@@ -5,6 +5,7 @@ import AttributeList from "../components/AttributeList/AttributeList";
 import CharacterBlock from "../components/CharacterBlock/CharacterBlock";
 import Class from "../components/Class/Class";
 
+
 function CharacterCreator() {
   const classes = [
     "Cleric",
