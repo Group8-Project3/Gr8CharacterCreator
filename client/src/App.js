@@ -1,5 +1,5 @@
 import React from "react";
-import CharacterCreator from "./components/AbilityScores/CharacterCreator";
+import CharacterCreator from "./pages/CharacterCreator";
 function App() {
   return (
     <>
