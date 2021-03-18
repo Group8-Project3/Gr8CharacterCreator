@@ -1,10 +1,11 @@
 import React from "react";
 
-function CharacterName() {
+function CharacterName(props, event) {
+  console.log(event.target)
   return (
     <div className="charName">
       <p>Character Name:</p>
-      <input className="text" type="input" />
+      <input onChange={event => props.setCharName(event.target.value)} className="text" type="input" />
     </div>
   );
 }

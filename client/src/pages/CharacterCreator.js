@@ -18,6 +18,7 @@ function CharacterCreator() {
   const [intelligence, setIntelligence] = useState("");
   const [wisdom, setWisdom] = useState("");
   const [charisma, setCharisma] = useState("");
+  const [charName, setCharName] = useState("");
 
   const classes = [
     "Cleric",
@@ -32,11 +33,18 @@ function CharacterCreator() {
   return (
     <>
       <Navbar />
-      <CharacterName />
+      <CharacterName setCharName={ setCharName }/>
       <CharacterBlock
         attributeList={classes}
         selectedClass={dndClass}
         selectedRace={race}
+        strength={ strength }
+        dexterity={ dexterity }
+        constitution={ constitution }
+        intelligence={ intelligence }
+        wisdom={ wisdom }
+        charisma={ charisma }
+        characterName={ charName }
       />
       <AttributeList
         attributeList={classes}

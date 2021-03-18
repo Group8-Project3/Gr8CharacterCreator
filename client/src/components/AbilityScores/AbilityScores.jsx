@@ -2,7 +2,6 @@ import React from 'react'
 
 function Skills(props) {
   function diceRoll(ability) {
-    console.log(ability)
     let a = [];
     for (let i = 0; i < 4; i++) {
       a[i] = Math.floor(Math.random() * 6) + 1;
