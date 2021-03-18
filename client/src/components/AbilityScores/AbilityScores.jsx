@@ -1,15 +1,8 @@
 import React from 'react'
-import { useState } from 'react';
 
-function Skills() {
-  const [dice, setDice] = useState("");
-  const [strength, setStrength] = useState("");
-  const [dexterity, setDexterity] = useState("");
-  const [constitution, setConstitution] = useState("");
-  const [intelligence, setIntelligence] = useState("");
-  const [wisdom, setWisdom] = useState("");
-  const [charisma, setCharisma] = useState("");
+function Skills(props) {
   function diceRoll(ability) {
+    console.log(ability)
     let a = [];
     for (let i = 0; i < 4; i++) {
       a[i] = Math.floor(Math.random() * 6) + 1;
@@ -18,25 +11,25 @@ function Skills() {
     }
     switch(ability){
      case "strength":
-       setStrength(a[1] + a[2] + a[3]);
+       props.setStrength(a[1] + a[2] + a[3]);
        break;
       case "dexterity":
-        setDexterity(a[1] + a[2] + a[3]);
+        props.setDexterity(a[1] + a[2] + a[3]);
         break;
       case "constitution":
-        setConstitution(a[1] + a[2] + a[3]);
+        props.setConstitution(a[1] + a[2] + a[3]);
         break;
       case "intelligence":
-        setIntelligence(a[1] + a[2] + a[3]);
+        props.setIntelligence(a[1] + a[2] + a[3]);
         break;
       case "wisdom":
-        setWisdom(a[1] + a[2] + a[3]);
+        props.setWisdom(a[1] + a[2] + a[3]);
         break;
       case "charisma":
-        setCharisma(a[1] + a[2] + a[3]);
+        props.setCharisma(a[1] + a[2] + a[3]);
         break;
         default:
-          setDice(a[1] + a[2] + a[3]);
+        props.setDice(a[1] + a[2] + a[3]);
     } 
   }
   return (
@@ -49,37 +42,37 @@ function Skills() {
             <i className="material-icons right">casino</i>
             </button>
           </li>
-          <p>{ strength }</p>
+          <p>{ props.strength }</p>
           <li>Dexterity
           <button className="btn waves-effect waves-light" type="submit" name="action" id="dexterity" onClick={() => diceRoll("dexterity")}>Submit
             <i className="material-icons right">casino</i>
             </button>
           </li>
-          <p>{ dexterity }</p>
+          <p>{ props.dexterity }</p>
           <li>Constition
           <button className="btn waves-effect waves-light" type="submit" name="action" id="constitution" onClick={() => diceRoll("constitution")}>Submit
             <i className="material-icons right">casino</i>
             </button>
           </li>
-          <p>{ constitution }</p>
+          <p>{ props.constitution }</p>
           <li>Intelligence
           <button className="btn waves-effect waves-light" type="submit" name="action" id="intelligence" onClick={() => diceRoll("intelligence")}>Submit
             <i className="material-icons right">casino</i>
             </button>
           </li>
-          <p>{ intelligence }</p>
+          <p>{ props.intelligence }</p>
           <li>Wisdom
           <button className="btn waves-effect waves-light" type="submit" name="action" id="wisdom" onClick={() => diceRoll("wisdom")}>Submit
             <i className="material-icons right">casino</i>
             </button>
           </li>
-          <p>{ wisdom }</p>
+          <p>{ props.wisdom }</p>
           <li>Charisma
           <button className="btn waves-effect waves-light" type="submit" name="action" id="charisma" onClick={() => diceRoll("charisma")}>Submit
             <i className="material-icons right">casino</i>
             </button>
           </li>
-          <p>{ charisma }</p>
+          <p>{ props.charisma }</p>
         </ul>
       </div>
     </div>
