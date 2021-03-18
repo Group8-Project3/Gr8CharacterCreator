@@ -1,17 +1,18 @@
 import React from "react";
 
 function AttributeList(props) {
+
   return (
     <div className="charClass">
       <h2>{ props.title }</h2>
       <form action="#">
-        {props.attributes.map((attribute) => {
-          return (<p>
+        {props.attributeList.map((attribute) => {
+          return (
           <label>
-            <input type="checkbox" />
+            <input name={ props.title } onChange={() => props.setAttribute(attribute)
+            } type="radio" />
             <span>{ attribute }</span>
           </label>
-        </p>
         )})
         }
       </form>

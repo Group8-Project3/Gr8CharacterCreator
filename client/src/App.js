@@ -9,14 +9,14 @@ function App() {
     <Router>
       <div>
         <Switch>
-          <Route path="/Login">
-            <Login />
-          </Route>
-          <Route path="/CharacterCreator">
+          <Route path="/creator">
             <CharacterCreator />
           </Route>
           <Route path="/CharacterList">
             <CharacterList />
+          </Route>
+          <Route path="/">
+            <Login />
           </Route>
         </Switch>
       </div>

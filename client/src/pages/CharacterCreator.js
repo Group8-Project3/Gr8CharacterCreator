@@ -1,10 +1,21 @@
-import React from "react";
-import Navbar from "./Navbar";
-import AbilityScores from "./components/AbilityScores";
-import AttributeList from "./components/AttributeList";
-import CharacterBlock from "./components/CharacterBlock";
+import React, { useState } from "react";
+import Navbar from "../components/Navbar/Navbar";
+import AbilityScores from "../components/AbilityScores/AbilityScores";
+import AttributeList from "../components/AttributeList/AttributeList";
+import CharacterBlock from "../components/CharacterBlock/CharacterBlock";
+import Skills from "../components/AbilityScores/AbilityScores";
+import axios from "axios";
+
 
 function CharacterCreator() {
+  const [skills, setSkills] = useState([]);
+  const [dndClass, setDndClass] = useState();
+  const [race, setRace] = useState();
+ 
+
+  
+
+ 
   const classes = [
     "Cleric",
     "Fighter",
@@ -13,7 +24,7 @@ function CharacterCreator() {
     "Rogue",
     "Sorcerer",
   ];
-  const skills = [
+  const skillsList = [
     "Acrobatics",
     "Animal",
     "Arcana",
@@ -34,15 +45,16 @@ function CharacterCreator() {
     "Stealth",
     "Survival",
   ];
-  const race = ["Human", "Elf", "Dwarf", "Half", "Gnome"];
+  const raceList = ["Human", "Elf", "Dwarf", "Half", "Gnome"];
+  console.log(skills, race)
   return (
     <>
       <Navbar />
       <CharacterBlock />
-      <AttributeList attributes={classes} title="Classes" />
-      <AttributeList attributes={race} title="Race" />
+      <AttributeList attributeList={ classes } setAttribute={ setDndClass } title="Classes" />
+      <AttributeList attributeList={ raceList } setAttribute={ setRace } title="Race" />
       <AbilityScores />
-      <AttributeList attributes={skills} title="Skills" />
+      <AttributeList attributeList={ skillsList } setAttribute={ setSkills } checkbox={ true } title="Skills" />
     </>
   );
 }
