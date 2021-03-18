@@ -25,3 +25,18 @@ body {
   top: 70px;
   margin-left: 20px;
 }
+
+.text {
+  color:rgb(184, 9, 3);
+  width: 350px;
+}
+
+.charName {
+  text-align: center;
+  background-color: white;
+  width: 400px;
+  margin: auto;
+  height: 80px;
+  border-radius: 6px;
+  opacity: 0.8;
+}

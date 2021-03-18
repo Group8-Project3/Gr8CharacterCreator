@@ -5,13 +5,13 @@ function AttributeList(props) {
     <div className="charClass">
       <h2>{ props.title }</h2>
       <form action="#">
-        {props.attributes.map((attribute) => {
-          return (<p>
+        {props.attributeList.map((attribute) => {
+          return (
           <label>
-            <input type="checkbox" />
-            <span>{ attribute }</span>
+            <input name={ props.title } onChange={() => props.setAttribute(attribute)
+            } type="radio" />
+            <span>{attribute}</span>
           </label>
-        </p>
         )})
         }
       </form>
