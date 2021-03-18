@@ -19,6 +19,8 @@ function CharacterCreator() {
   const [wisdom, setWisdom] = useState("");
   const [charisma, setCharisma] = useState("");
   const [charName, setCharName] = useState("");
+  const [equipment, getEquipment] = useState("");
+  
 
   const classes = [
     "Cleric",
@@ -44,7 +46,8 @@ function CharacterCreator() {
         intelligence={ intelligence }
         wisdom={ wisdom }
         charisma={ charisma }
-        characterName={ charName }
+        charName={ charName }
+        equipment={ equipment }
       />
       <AttributeList
         attributeList={classes}

@@ -1,6 +1,8 @@
 import React from "react";
 
 function CharacterBlock(props) {
+  
+  
   return (
     <div className="charBlock">
       <p>
@@ -27,7 +29,7 @@ function CharacterBlock(props) {
       </p>
       <hr />
       <p>
-        Equipment: <span></span>
+        Equipment: <span>{props.equipment}</span>
       </p>
     </div>
   );
