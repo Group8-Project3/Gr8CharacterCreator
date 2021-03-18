@@ -1,7 +1,7 @@
 import React from "react";
 
 function CharacterName(props, event) {
-  console.log(this);
+  console.log(event.value)
   return (
     <div className="charName">
       <p>Character Name:</p>
