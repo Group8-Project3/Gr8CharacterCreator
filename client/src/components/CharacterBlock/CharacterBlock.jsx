@@ -1,6 +1,8 @@
 import React from "react";
 
 function CharacterBlock(props) {
+  
+  
   return (
     <div className="charBlock">
       <p>

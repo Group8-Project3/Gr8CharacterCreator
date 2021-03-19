@@ -10,7 +10,8 @@ function AttributeList(props) {
           <label>
             <input name={ props.title } onChange={() => props.setAttribute(attribute)
             } type="radio" />
-            <span>{attribute}</span>
+            {/* There may be a better way to create this blank space: */}
+            <span>{attribute}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
           </label>
         )})
         }
