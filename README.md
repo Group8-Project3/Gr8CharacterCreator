@@ -24,7 +24,8 @@ https://www.heroku.com/ (Update once deployed)
 
 ## Installation
 
-To run locally, clone the repo from LINK. <br>
-Run npm install. <br>
-Run npm start. <br>
-The app will auto run on port 3000. <br>
+To run locally: <br>
+-Clone the repo from https://github.com/Group8-Project3/Project-3 <br>
+-Run npm install. <br>
+-Run npm start. <br>
+-The app will auto run on port 3000. <br>
