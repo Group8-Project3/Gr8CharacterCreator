@@ -2,7 +2,7 @@
 
 ## Description
 
-"Group Gr8 Character Creator" is a React app for creating basic player characters in Dungeons & Dragons (5th Edition).
+"Group Gr8 Character Creator" is a React app for creating and storying basic player characters in Dungeons & Dragons (5th Edition).
 
 ## Desktop Screenshots
 
