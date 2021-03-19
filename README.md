@@ -17,3 +17,10 @@
 ![alt_text](./client/src/assets/images/Mobile.png)
 
 <br>
+
+## Installation
+
+To run locally, clone the repo from LINK. <br>
+Run npm install. <br>
+Run npm start. <br>
+The app will auto run on port 3000. <br>
