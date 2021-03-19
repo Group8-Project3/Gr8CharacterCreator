@@ -15,11 +15,10 @@ const Character = new Schema(
         charisma: { type: Number, required: true },
         equipment: { type: String, required: true },
         skills: { type: String, required: true },
-        spells: { type: String, required: true }
 
 
         
     }
 )
 
-module.exports = mongoose.model("characters", Character)
+module.exports = mongoose.model("characters", Character)     
