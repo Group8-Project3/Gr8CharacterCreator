@@ -42,3 +42,5 @@ Register for an account, then log in. Add your character's name, then select the
 
 ## Contributing
 
+After 3/23/2021, pull requests are welcome. Please open an issue first to discuss changes.
+
