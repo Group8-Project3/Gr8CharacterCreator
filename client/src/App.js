@@ -12,7 +12,7 @@ function App() {
           <Route path="/creator">
             <CharacterCreator />
           </Route>
-          <Route path="/CharacterList">
+          <Route path="/characterlist">
             <CharacterList />
           </Route>
           <Route path="/">
