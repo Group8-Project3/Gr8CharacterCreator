@@ -35,3 +35,10 @@ npm install
 npm start
 ```
 -The app will auto run on port 3000.
+
+## Usage
+
+Register for an account, then log in. Add your character's name, then select their race, class, and roll for abilities. Created characters will be stored on the "Created Characters" page.
+
+## Contributing
+
