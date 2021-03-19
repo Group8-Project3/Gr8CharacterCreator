@@ -12,5 +12,8 @@
 <br>
 
 ## Mobile Screenshots
+<br>
 
 ![alt_text](./client/src/assets/images/Mobile.png)
+
+<br>
