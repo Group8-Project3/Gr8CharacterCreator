@@ -27,7 +27,7 @@ function CharacterCreator() {
     "Sorcerer",
   ];
 
-  const raceList = ["Human", "Elf", "Dwarf", "Half", "Gnome"];
+  const raceList = ["Human", "Elf", "Dwarf", "Halfling", "Gnome", "Dragonborn"];
   return (
     <>
       <Navbar />

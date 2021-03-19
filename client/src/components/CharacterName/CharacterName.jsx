@@ -5,7 +5,8 @@ function CharacterName(props, event) {
   return (
     <div className="charName">
       <p>Character Name:</p>
-      <input onChange={event => props.setCharName(event.target.value)} className="text" type="input" />
+      <input onChange={event => props.setCharName(event.target.value)} className="text" type="input"/>
+      
     </div>
   );
 }
