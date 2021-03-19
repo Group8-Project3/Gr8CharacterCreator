@@ -1,12 +1,16 @@
 # Project-3
 
-# Table of Contents
+## Table of Contents
 
 -[Description](#description)
-
 -[Live App](#live-app)
-
--[Desktp Screenshots](#desktop-screenshots)
+-[Desktop Screenshots](#desktop-screenshots)
+-[Mobile Screenshots](#mobile-screenshots)
+-[Installation](#installation)
+-[Usage](#usage)
+-[Contributing](#contributing)
+-[Credits](#credits)
+-[License](#license)
 
 ## Description
 
