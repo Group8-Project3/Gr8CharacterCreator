@@ -1,5 +1,13 @@
 # Project-3
 
+# Table of Contents
+
+-[Description](#description)
+
+-[Live App](#live-app)
+
+-[Desktp Screenshots](#desktop-screenshots)
+
 ## Description
 
 "Group Gr8 Character Creator" is a React app for creating and storying basic player characters in Dungeons & Dragons (5th Edition).
@@ -50,4 +58,22 @@ After 3/23/2021, pull requests are welcome. Please open an issue first to discus
 -GitHub: https://github.com/ChristianGoldman <br>
 -Email: christian.goldman9638@gmail.com<br>
 
-TESTING
+#### Malik Jallah
+-GitHub: https://github.com/mjallah <br>
+-Email:  malikjallah@gmail.com<br>
+
+#### Jacob Kippes
+-GitHub: https://github.com/jakekippes <br>
+-Email: jakekippes123@gmail.com <br>
+
+#### Bo Stevenson
+-GitHub: https://github.com/bo-stevenson <br>
+-Email: bostevenson1027@gmail.com <br>
+
+#### Bo Stevenson
+-GitHub: https://github.com/evanjamesc <br>
+-Email: evanjameschristianson@gmail.com <br>
+
+## License
+[![License](https://img.shields.io/badge/License-MIT-purple.svg)](https://opensource.org/licenses/MIT)
+- [MIT License Documentation](https://opensource.org/licenses/MIT)
