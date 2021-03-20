@@ -7,6 +7,12 @@ const SignUpLoginForm = () => {
   const [password, setPassword] = useState("");
 
   const onSubmit = (e) => {
+    axios.get('/hi').then((res) => {
+      console.log(res)
+    }).then((err) => {
+      console.error(err)
+    });
+    
     e.preventDefault();
 
     const userData = {
@@ -23,7 +29,6 @@ const SignUpLoginForm = () => {
         console.log(err.response);
       });
   };
-
 
   return (
     <div className="Login">

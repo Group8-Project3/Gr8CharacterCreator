@@ -27,9 +27,11 @@ passport.use(
               newUser
                 .save()
                 .then((user) => {
+                  console.log("RETURNING THINGS", user);
                   return done(null, user);
                 })
                 .catch((err) => {
+                  console.log("THERE WAS AN ERROR", err);
                   return done(null, false, { message: err });
                 });
             });
