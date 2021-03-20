@@ -4,12 +4,13 @@ const passport = require("passport");
 
 router.post("/register_login", (req, res, next) => {
   passport.authenticate("local", function (err, user, info) {
+    console.log("In the passport callback", err, user, info);
     if (err) {
       return res.status(400).json({ errors: err });
     }
-    if (!user) {
-      return res.status(400).json({ errors: "No user found" });
-    }
+    // if (!user) {
+    //   return res.status(401).json({ errors: "No user found" });
+    // }
     req.logIn(user, function (err) {
       if (err) {
         return res.status(400).json({ errors: err });
