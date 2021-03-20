@@ -74,7 +74,7 @@ After 3/23/2021, pull requests are welcome. Please open an issue first to discus
 -GitHub: https://github.com/bo-stevenson <br>
 -Email: bostevenson1027@gmail.com <br>
 
-#### Bo Stevenson
+#### Evan Christianson
 -GitHub: https://github.com/evanjamesc <br>
 -Email: evanjameschristianson@gmail.com <br>
 
