@@ -13,8 +13,10 @@ const characterSchema = new Schema(
         intelligence: { type: Number, required: true },
         wisdom: { type: Number, required: true },
         charisma: { type: Number, required: true },
-        equipment: { type: String, required: true }
-        
+        equipment: { type: String, required: true },
+        armor: { type: Number, required: true },
+        HP: { type: Number, required: false },
+        savingThrows: { type: String, required: true }
     }
 )
 
