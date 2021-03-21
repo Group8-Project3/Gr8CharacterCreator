@@ -6,7 +6,6 @@ import CharacterBlock from "../components/CharacterBlock/CharacterBlock";
 import CharacterName from "../components/CharacterName/CharacterName";
 
 function CharacterCreator() {
-  const [skills, setSkills] = useState([]);
   const [dndClass, setDndClass] = useState("Fighter");
   const [race, setRace] = useState("Human");
   const [dice, setDice] = useState("");
