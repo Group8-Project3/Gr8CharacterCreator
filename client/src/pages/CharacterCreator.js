@@ -4,9 +4,10 @@ import AbilityScores from "../components/AbilityScores/AbilityScores";
 import AttributeList from "../components/AttributeList/AttributeList";
 import CharacterBlock from "../components/CharacterBlock/CharacterBlock";
 import CharacterName from "../components/CharacterName/CharacterName";
+import axios from "axios";
+
 
 function CharacterCreator() {
-  const [skills, setSkills] = useState([]);
   const [dndClass, setDndClass] = useState("Fighter");
   const [race, setRace] = useState("Human");
   const [dice, setDice] = useState("");
@@ -17,6 +18,7 @@ function CharacterCreator() {
   const [wisdom, setWisdom] = useState("18");
   const [charisma, setCharisma] = useState("18");
   const [charName, setCharName] = useState("J'DINKALAGE MORGOONE");
+  const [equipment, setEquipment] = useState("");
 
   const classes = [
     "Cleric",
@@ -26,6 +28,33 @@ function CharacterCreator() {
     "Rogue",
     "Sorcerer",
   ];
+
+  const onSubmit = (e) => {
+    
+    e.preventDefault();
+    const charData = {
+      name: charName,
+      race: race,
+      class: dndClass,
+      strength: strength,
+      dexterity: dexterity,
+      constitution: constitution,
+      intelligence: intelligence,
+      wisdom: wisdom,
+      charisma: charisma,
+      equipment: equipment, 
+      
+    };
+    axios
+      .post("/api/character", charData)
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+        console.log(err.response);
+      });
+  };
 
   const raceList = ["Human", "Elf", "Dwarf", "Halfling", "Gnome", "Dragonborn"];
   return (
@@ -43,6 +72,7 @@ function CharacterCreator() {
         wisdom={ wisdom }
         charisma={ charisma }
         charName={ charName }
+        equipment={ equipment }
       />
       <AttributeList
         attributeList={ classes}
@@ -69,6 +99,9 @@ function CharacterCreator() {
         wisdom={ wisdom }
         charisma={ charisma }
         />
+      <button block size="lg" onClick={onSubmit} type="submit">
+        Create!
+      </button>
     </>
   );
 }

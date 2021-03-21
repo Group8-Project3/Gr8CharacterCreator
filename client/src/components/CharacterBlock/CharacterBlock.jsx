@@ -93,9 +93,6 @@ function CharacterBlock(props) {
           <></>
         )}
       </p>
-      <p>
-        Skills: <span>Athletics +2, Intimidation +2</span>
-      </p>
       <hr />
       <p>
         Equipment:
