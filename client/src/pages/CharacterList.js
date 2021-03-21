@@ -9,6 +9,7 @@ function CharacterList() {
   return (
     <div>
       <Navbar />
+      
     </div>
   );
 }
