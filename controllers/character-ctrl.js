@@ -8,9 +8,12 @@ module.exports = {
         .catch(err => res.status(422).json(err))
     },
     create: function(req, res){
-        console.log(db.characters);
+        const character = req.body;
         db.characters.create(req.body)
         .then(dbcharacters => res.json(dbcharacters))
-        .catch(err => res.status(422).json(err))
+        .catch(err => {
+            console.log(err)
+            res.status(422).json(err)
+        })
     }
 };
