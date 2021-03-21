@@ -35,11 +35,6 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/Project_3
   useUnifiedTopology: true
 });
 
-app.get('/hi', (req,res) => {
-  res.send('hi')
-})
-
-
 // Send every other request to the React app
 // Define any API routes before this runs
  app.get("*", (req, res) => {
