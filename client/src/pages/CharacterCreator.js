@@ -19,7 +19,7 @@ function CharacterCreator() {
   const [charisma, setCharisma] = useState("18");
   const [charName, setCharName] = useState("J'DINKALAGE MORGOONE");
   const [equipment, setEquipment] = useState("");
-
+ 
   const classes = [
     "Cleric",
     "Fighter",
@@ -30,29 +30,34 @@ function CharacterCreator() {
   ];
 
   const onSubmit = (e) => {
-    
+    const AC = document.getElementById('armorClass').innerHTML;
+    const HP = document.getElementById('hitPoints').innerHTML;
+    const savingThrows = document.getElementById('savingThrows').innerHTML;
+    const equipment = document.getElementById('equipment').innerHTML;
     e.preventDefault();
     const charData = {
-      charName,
-      race,
-      dndClass,
-      strength,
-      dexterity,
-      constitution,
-      intelligence,
-      wisdom,
-      charisma,
-      equipment, 
-      
+      name: charName,
+      race: race,
+      class: dndClass,
+      strength: strength,
+      dexterity: dexterity,
+      constitution: constitution,
+      intelligence: intelligence,
+      wisdom: wisdom,
+      charisma: charisma,
+      equipment: equipment, 
+      armor: AC,
+      HP: HP,    
+      savingThrows: savingThrows
     };
     axios
       .post("/api/character", charData)
       .then((res) => {
-        console.log(res);
+        console.log(res)
       })
       .catch((err) => {
-        console.log(err);
-        console.log(err.response);
+        console.log(err)
+        console.log(err.response)
       });
   };
 
@@ -73,6 +78,7 @@ function CharacterCreator() {
         charisma={ charisma }
         charName={ charName }
         equipment={ equipment }
+        setEquipment={ setEquipment }
       />
       <AttributeList
         attributeList={ classes}
