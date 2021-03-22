@@ -33,16 +33,16 @@ function CharacterCreator() {
     
     e.preventDefault();
     const charData = {
-      name: charName,
-      race: race,
-      class: dndClass,
-      strength: strength,
-      dexterity: dexterity,
-      constitution: constitution,
-      intelligence: intelligence,
-      wisdom: wisdom,
-      charisma: charisma,
-      equipment: equipment, 
+      charName,
+      race,
+      dndClass,
+      strength,
+      dexterity,
+      constitution,
+      intelligence,
+      wisdom,
+      charisma,
+      equipment, 
       
     };
     axios
