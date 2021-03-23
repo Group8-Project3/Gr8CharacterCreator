@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import { Modal, Form, Col, Row } from "react-bootstrap";
+import { Card, Form, Col, Row } from "react-bootstrap";
 import axios from "axios";
 import DelegatedAuthList from "../DelegatedAuthList";
 
 import {
   PaddedContainer,
   ResponsiveHeader4,
-  MutedSpan,
   VerticalCenterWrapper,
   SubmitButtom,
 } from "./styles";
@@ -37,8 +36,7 @@ const SignUpLoginForm = () => {
     <Form onSubmit={onSubmit}>
       <Form.Group controlId="formBasicEmail">
         <Row>
-          <Form.Label column xs="2" sm="1">
-          </Form.Label>
+          <Form.Label column xs="2" sm="1"></Form.Label>
           <Col xs="10" sm="11">
             <Form.Control
               type="email"
@@ -49,7 +47,6 @@ const SignUpLoginForm = () => {
               }}
               required
             />
-            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
             <Form.Text className="text-muted">
               We'll never share your email with anyone else.
             </Form.Text>
@@ -59,46 +56,30 @@ const SignUpLoginForm = () => {
 
       <Form.Group controlId="formBasicPassword">
         <Row>
-          <Form.Label column xs="2" sm="1">
-          </Form.Label>
+          <Form.Label column xs="2" sm="1"></Form.Label>
           <Col xs="10" sm="11">
             <Form.Control
               type="password"
               placeholder="Password"
               onChange={(e) => setPassword(e.target.value)}
             />
-            <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-          </Col>
-        </Row>
-      </Form.Group>
-      <Form.Group controlId="formBasicCheckbox">
-        <Row>
-          <Col xs="2" sm="1">
-            <Form.Check type="checkbox" />
-          </Col>
-          <Col xs="10" sm="11">
-            <Form.Label>
-              <MutedSpan>
-                I hereby confirm that the referral app is allowed to send me
-                emails, up until I unsuscribe
-              </MutedSpan>
-            </Form.Label>
           </Col>
         </Row>
       </Form.Group>
       <VerticalCenterWrapper>
-        <SubmitButtom type="submit">Submit</SubmitButtom>
+        <SubmitButtom type="submit">Sign Up</SubmitButtom>
+        <SubmitButtom href="http://localhost:3000/characterlist">Login</SubmitButtom>
       </VerticalCenterWrapper>
     </Form>
   );
 };
 
-const SignupLoginModal = (props) => {
+const SignupLoginCard = () => {
   return (
-    <Modal show={props.show} onHide={() => props.setShow(false)}>
-      <Modal.Header closeButton>
-        <Modal.Title>Sign up / Login</Modal.Title>
-      </Modal.Header>
+    <Card>
+      <Card.Header>
+        <Card.Title>DnD Character Creator Sign up / Login</Card.Title>
+      </Card.Header>
       <PaddedContainer>
         <ResponsiveHeader4>With email:</ResponsiveHeader4>
         <br />
@@ -110,8 +91,8 @@ const SignupLoginModal = (props) => {
         <br />
         <DelegatedAuthList />
       </PaddedContainer>
-    </Modal>
+    </Card>
   );
 };
 
-export default SignupLoginModal;
+export default SignupLoginCard;
