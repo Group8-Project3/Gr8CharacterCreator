@@ -8,6 +8,10 @@ body {
 }
 
 .charClass {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-top: 10px;
+  margin-bottom: 5px;
   text-align: center;
   color: rgb(184, 9, 3);
   background-color: white;
@@ -49,6 +53,7 @@ body {
   top: 70px;
   right: 40px;
   margin-left: 20px;
+  padding-left: 10px;
 }
 
 .listBlock {
