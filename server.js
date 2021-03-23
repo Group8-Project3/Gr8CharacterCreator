@@ -1,6 +1,6 @@
 const express = require("express");
-const session = require("express-session");
-const MongoStore = require('connect-mongo');
+// const session = require("express-session");
+// const MongoStore = require('connect-mongo');
 const mongoose = require("mongoose");
 const passport = require("./passport/setup");
 const path = require("path");
@@ -11,14 +11,14 @@ const routes = require("./routes");
 // Define middleware here
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(
-  session({
-    secret: "this is secret",
-    resave: false,
-    saveUninitialized: true,
-    store: new MongoStore({ mongoUrl: "mongodb://localhost:27017/Project_3" })
-  })
-);
+// app.use(
+//   session({
+//     secret: "this is secret",
+//     resave: false,
+//     saveUninitialized: true,
+//     store: new MongoStore({ mongoUrl: "mongodb://localhost:27017/Project_3" })
+//   })
+// );
 app.use(passport.initialize());
 app.use(passport.session());
 
