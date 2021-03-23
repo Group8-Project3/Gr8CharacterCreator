@@ -51,6 +51,16 @@ body {
   margin-left: 20px;
 }
 
+.listBlock {
+  background-color: white;
+  width: 30%;
+  border-radius: 6px;
+  opacity: 0.8;
+  top: 70px;
+  right: 40px;
+  margin-left: 20px;
+}
+
 .name{
   margin-bottom: 20px;
 }

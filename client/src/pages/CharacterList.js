@@ -1,15 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "../components/Navbar/Navbar";
-import AbilityScores from "../components/AbilityScores/AbilityScores";
-import AttributeList from "../components/AttributeList/AttributeList";
-import CharacterBlock from "../components/CharacterBlock/CharacterBlock";
-import CharacterName from "../components/CharacterName/CharacterName";
+import List from "../components/List/List";
 
 function CharacterList() {
   return (
     <div>
-      <Navbar />
-      
+      <Navbar/>
+      <List/>
     </div>
   );
 }
