@@ -3,13 +3,13 @@ import React from "react";
 function CharacterBlock(props) {
   return (
     <div className="charBlock">
-      <p>
+      <p className="textPage">
         {props.charName} {props.selectedRace} {props.selectedClass}
       </p>
       <hr />
-      <p>
+      <p className="textPage">
         Armor Class:
-        <div id="armorClass">
+        <div id="armorClass" className="textPage">
           {props.selectedClass === "Cleric" ? (
             11 + Math.ceil((props.dexterity - 10) / 2)
           ) : props.selectedClass === "Fighter" ? (
@@ -27,9 +27,9 @@ function CharacterBlock(props) {
           )}
         </div>
       </p>
-      <p>
+      <p className="textPage">
         Hit Points:{" "}
-        <div id="hitPoints">
+        <div id="hitPoints" className="textPage">
           {props.selectedClass === "Cleric" ? (
             <>
               {8 +
@@ -78,16 +78,16 @@ function CharacterBlock(props) {
         </div>
       </p>
       <hr />
-      <p>
-        STR:<span>{props.strength}</span> DEX:<span>{props.dexterity}</span>{" "}
-        CON:<span>{props.constitution}</span> INT:
-        <span>{props.intelligence}</span> WIS:<span>{props.wisdom}</span> CHA:
-        <span>{props.charisma}</span>{" "}
+      <p className="textPage">
+        STR:<span>{props.strength}&nbsp;&nbsp;</span> DEX:<span>{props.dexterity}&nbsp;&nbsp;</span>{" "}
+        CON:<span>{props.constitution}&nbsp;&nbsp;</span> INT:
+        <span>{props.intelligence}&nbsp;&nbsp;</span> WIS:<span>{props.wisdom}&nbsp;&nbsp;</span> CHA:
+        <span>{props.charisma}&nbsp;&nbsp;</span>{" "}
       </p>
       <hr />
-      <p>
+      <p className="textPage">
         Saving Throws:{" "}
-        <div id="savingThrows">
+        <div className="textPage" id="savingThrows">
           {props.selectedRace === "Human" ? (
             "STR +1, DEX +1, CON +1, INT +1, WIS +1, CHA +1"
           ) : props.selectedRace === "Elf" ? (
@@ -106,9 +106,9 @@ function CharacterBlock(props) {
         </div>
       </p>
       <hr />
-      <p>
+      <p className="textPage">
         Equipment:
-        <div id="equipment">
+        <div className="textPage" id="equipment">
           {props.selectedClass === "Cleric" ? (
             "Chain Mail, Shield, Prayer beads, Mace"
           ) : props.selectedClass === "Fighter" ? (

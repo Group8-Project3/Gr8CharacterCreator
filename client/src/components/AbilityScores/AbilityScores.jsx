@@ -36,10 +36,10 @@ function Skills(props) {
   return (
     <div>
       <div className="charClass">
-        <h2>Ability Scores</h2>
-        <ul>
+        <h2 className="title">Ability Scores</h2>
+        <ul className="textScore">
           <li>
-            Strength
+            Strength&nbsp;&nbsp;
             <button
               className="btn waves-effect waves-light"
               type="submit"
@@ -47,13 +47,13 @@ function Skills(props) {
               id="strength"
               onClick={() => diceRoll("strength")}
             >
-              Submit
+              Roll
               <i className="material-icons right">casino</i>
             </button>
           </li>
           <p>{ props.strength }</p>
           <li>
-            Dexterity
+            Dexterity&nbsp;&nbsp;
             <button
               className="btn waves-effect waves-light"
               type="submit"
@@ -61,13 +61,13 @@ function Skills(props) {
               id="dexterity"
               onClick={() => diceRoll("dexterity")}
             >
-              Submit
+              Roll
               <i className="material-icons right">casino</i>
             </button>
           </li>
           <p>{props.dexterity}</p>
           <li>
-            Constition
+            Constition&nbsp;&nbsp;
             <button
               className="btn waves-effect waves-light"
               type="submit"
@@ -75,13 +75,13 @@ function Skills(props) {
               id="constitution"
               onClick={() => diceRoll("constitution")}
             >
-              Submit
+              Roll
               <i className="material-icons right">casino</i>
             </button>
           </li>
           <p>{props.constitution}</p>
           <li>
-            Intelligence
+            Intelligence&nbsp;&nbsp;
             <button
               className="btn waves-effect waves-light"
               type="submit"
@@ -89,13 +89,13 @@ function Skills(props) {
               id="intelligence"
               onClick={() => diceRoll("intelligence")}
             >
-              Submit
+              Roll
               <i className="material-icons right">casino</i>
             </button>
           </li>
           <p>{props.intelligence}</p>
           <li>
-            Wisdom
+            Wisdom&nbsp;&nbsp;
             <button
               className="btn waves-effect waves-light"
               type="submit"
@@ -103,13 +103,13 @@ function Skills(props) {
               id="wisdom"
               onClick={() => diceRoll("wisdom")}
             >
-              Submit
+              Roll
               <i className="material-icons right">casino</i>
             </button>
           </li>
           <p>{props.wisdom}</p>
           <li>
-            Charisma
+            Charisma&nbsp;&nbsp;
             <button
               className="btn waves-effect waves-light"
               type="submit"
@@ -117,7 +117,7 @@ function Skills(props) {
               id="charisma"
               onClick={() => diceRoll("charisma")}
             >
-              Submit
+              Roll
               <i className="material-icons right">casino</i>
             </button>
           </li>

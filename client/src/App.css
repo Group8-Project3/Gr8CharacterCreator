@@ -10,25 +10,67 @@ body {
 .charClass {
   text-align: center;
   color: rgb(184, 9, 3);
+  background-color: white;
+  width: 60%;
+  opacity: 0.8;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.createBtn {
+  background-color: rgb(184, 9, 3);
+  border-radius: 5px 25px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 16px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  margin-left: 20px;
 }
 
 .nav-wrapper h1 {
   margin-top: 10px;
 }
 
+.title{
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: xx-large;
+}
+
 .charBlock {
   background-color: white;
-  width: 400px;
+  width: 30%;
   border-radius: 6px;
   opacity: 0.8;
   position: fixed;
   top: 70px;
+  right: 40px;
   margin-left: 20px;
 }
 
-.text {
+.name{
+  margin-bottom: 20px;
+}
+
+.textPage {
   color:rgb(184, 9, 3);
-  width: 350px;
+  font-family: 'Alegreya SC', serif;
+  font-size: x-large;
+  margin-right: 10px;
+}
+
+.textScore {
+  font-family: 'Alegreya SC', serif;
+  font-size: larger;
+}
+
+.boxCharName {
+  margin-bottom: 10px;
+  font-family: 'Alegreya SC', serif;
+  color:rgb(184, 9, 3);
 }
 
 .charName {
@@ -36,7 +78,7 @@ body {
   background-color: white;
   width: 400px;
   margin: auto;
-  height: 80px;
+  height: 110%;
   border-radius: 6px;
   opacity: 0.8;
 }

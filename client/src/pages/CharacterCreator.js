@@ -105,8 +105,8 @@ function CharacterCreator() {
         wisdom={ wisdom }
         charisma={ charisma }
         />
-      <button block size="lg" onClick={onSubmit} type="submit">
-        Create!
+      <button className="createBtn" block size="lg" onClick={onSubmit} type="submit">
+        Save Character!
       </button>
     </>
   );

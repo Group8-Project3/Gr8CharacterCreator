@@ -3,7 +3,7 @@ import React from "react";
 function AttributeList(props) {
   return (
     <div className="charClass">
-      <h2>{ props.title }</h2>
+      <h2 className="title">{ props.title }</h2>
       <form action="#">
         {props.attributeList.map((attribute) => {
           return (
@@ -11,7 +11,7 @@ function AttributeList(props) {
             <input name={ props.title } onChange={() => props.setAttribute(attribute)
             } type="radio" />
             {/* There may be a better way to create this blank space: */}
-            <span>{attribute}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span className="textPage">{attribute}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
           </label>
         )})
         }
