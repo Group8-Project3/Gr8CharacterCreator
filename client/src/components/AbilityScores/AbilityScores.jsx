@@ -67,7 +67,7 @@ function Skills(props) {
           </li>
           <p>{props.dexterity}</p>
           <li>
-            Constition&nbsp;&nbsp;
+            Constitution&nbsp;&nbsp;
             <button
               className="btn waves-effect waves-light"
               type="submit"
