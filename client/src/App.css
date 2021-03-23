@@ -67,12 +67,18 @@ body {
   font-size: larger;
 }
 
+.boxCharName {
+  margin-bottom: 10px;
+  font-family: 'Alegreya SC', serif;
+  color:rgb(184, 9, 3);
+}
+
 .charName {
   text-align: center;
   background-color: white;
   width: 400px;
   margin: auto;
-  height: 80px;
+  height: 110%;
   border-radius: 6px;
   opacity: 0.8;
 }
