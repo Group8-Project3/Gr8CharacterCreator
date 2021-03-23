@@ -1,28 +1,23 @@
-import React, { useState } from "react";
-import SignupLoginModal from "../components/SignupLoginModal"
+import React from "react";
+import SignupLoginCard from "../components/SignupLoginCard"
 
 import {
   PaddedCol,
   FullRow,
   VerticalCenterWrapper,
-  LoginButton
 } from "./styles";
 
 const LoginPage = () => {
-  const [show, setShow] = useState(false);
 
   return (
     <div>
       <FullRow>
-        <PaddedCol>
+        <PaddedCol xs={{ span: 10, offset: 1 }} sm={{ span: 5, offset: 1 }}>
           <VerticalCenterWrapper>
-            <LoginButton size="lg" onClick={() => setShow(true)}>
-              Signup/Login
-            </LoginButton>
+            <SignupLoginCard />
           </VerticalCenterWrapper>
         </PaddedCol>
       </FullRow>
-      <SignupLoginModal show={show} setShow={setShow} />
     </div>
   )
 }
