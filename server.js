@@ -16,7 +16,7 @@ app.use(
     secret: "this is secret",
     resave: false,
     saveUninitialized: true,
-    store: new MongoStore({ mongoUrl: "mongodb://localhost:27017/Project_3" })
+    store: new MongoStore({ mongoUrl: process.env.MONGODB_URI || "mongodb://localhost:27017/Project_3" })
   })
 );
 app.use(passport.initialize());
@@ -37,9 +37,9 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/Project_3
 
 // Send every other request to the React app
 // Define any API routes before this runs
- app.get("*", (req, res) => {
-   res.sendFile(path.join(__dirname, "./client/public/index.html"));
- });
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./client/public/index.html"));
+});
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
