@@ -20,14 +20,14 @@
 
 https://www.heroku.com/ (Update once deployed)
 
-## Desktop Screenshots
+## Desktop Screenshot
 <br>
 
 ![alt_text](./client/src/assets/images/Desktop.png)
 
 <br>
 
-## Mobile Screenshots
+## Mobile Screenshot
 <br>
 
 ![alt_text](./client/src/assets/images/Mobile.png)
