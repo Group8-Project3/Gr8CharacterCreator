@@ -11,16 +11,6 @@ const routes = require("./routes");
 // Define middleware here
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-<<<<<<< HEAD
-app.use(
-  session({
-    secret: "this is secret",
-    resave: false,
-    saveUninitialized: true,
-    store: new MongoStore({ mongoUrl: process.env.MONGODB_URI || "mongodb://localhost:27017/Project_3" })
-  })
-);
-=======
 // app.use(
 //   session({
 //     secret: "this is secret",
@@ -29,7 +19,6 @@ app.use(
 //     store: new MongoStore({ mongoUrl: "mongodb://localhost:27017/Project_3" })
 //   })
 // );
->>>>>>> 8d4fb5e1ec7996afd5f8b20b92f8cbedb99b578b
 app.use(passport.initialize());
 app.use(passport.session());
 
