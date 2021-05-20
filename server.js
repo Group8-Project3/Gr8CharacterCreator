@@ -29,7 +29,7 @@ if (process.env.NODE_ENV === "production") {
 // Define API routes here
 app.use(routes);
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/Project_3", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Project_3", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true
