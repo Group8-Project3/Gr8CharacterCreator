@@ -26,14 +26,16 @@ app.use(passport.session());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/public"));
 }
-// Define API routes here
-app.use(routes);
-
+// Connect mongoose to Atlas or your local Mongodb server
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Project_3", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true
 });
+
+// Define API routes here
+app.use(routes);
+
 
 // Send every other request to the React app
 // Define any API routes before this runs
