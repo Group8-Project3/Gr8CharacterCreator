@@ -27,7 +27,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/public"));
 }
 // Connect mongoose to Atlas or your local Mongodb server
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Project_3", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://JakeKippes:Wow12345@cluster0.l4wee.mongodb.net/Project_3?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true
