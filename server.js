@@ -24,7 +24,7 @@ app.use(passport.session());
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/public"));
+  app.use(express.static("client/build"));
 }
 // Connect mongoose to Atlas or your local Mongodb server
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Project_3", {
