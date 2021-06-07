@@ -18,7 +18,7 @@
 
 ## Live App
 
-https://www.heroku.com/ (Update once deployed)
+https://murmuring-cliffs-10757.herokuapp.com/
 
 ## Desktop Screenshot
 <br>
